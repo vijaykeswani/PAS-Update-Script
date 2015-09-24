@@ -6,4 +6,4 @@ Run as :
 
 chmod 777 check
 
-./check <username> <password>
+./check $username $password
