@@ -1,9 +1,9 @@
 from bs4 import BeautifulSoup
 
-soup = BeautifulSoup(open("page"))
+soup = BeautifulSoup(open("/home/vijay/PAS/page"))
 
 #print(soup.prettify())
-with open("updates") as f:
+with open("/home/vijay/PAS/updates") as f:
 	old=f.readline()
 
 
@@ -30,7 +30,7 @@ for row in soup.find_all('div',attrs={"class" : "notice-element"}):
 		print head
 	else: break
 
-f = open('updates', 'w')
+f = open('/home/vijay/PAS/updates', 'w')
 f.write(update)
 
 	

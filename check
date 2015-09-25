@@ -1,11 +1,11 @@
 #!/bin/bash
-curl -s --user $1:$2 --cookie-jar ./cookie http://172.31.1.200/pas/login >out
-curl -s --cookie ./cookie http://172.31.1.200/pas/student > page
+curl -s --user $1:$2 --cookie-jar ./cookie http://172.31.1.200/pas/login > /home/vijay/PAS/out
+curl -s --cookie ./cookie http://172.31.1.200/pas/student > /home/vijay/PAS/page
 #notice=`python gen.py`
 #echo $notice
 #notify-send $notice
 
-python gen.py > out
-notify-send "Updates" "$(cat ./out)"
-rm out
+python gen.py > /home/vijay/PAS/out
+notify-send "Updates" "$(cat /home/vijay/PAS/out)"
+rm /home/vijay/PAS/out
 
